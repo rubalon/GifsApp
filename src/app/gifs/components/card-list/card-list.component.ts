@@ -13,8 +13,4 @@ export class CardListComponent {
   @Input()
   public gifList: Gifs[] = [];
 
-
-  public showGifs():void {
-    console.log(this.gifList);
-  }
 }

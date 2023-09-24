@@ -2,8 +2,8 @@
   <div *ngFor="let gif of gifList"
   class="col-md-3 col-sm-6">
     <div class="text-center card mb-2 bg-dark">
+      <img class="card-img-top" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
       <div class="card-body text-white">
-        <img class="card-img-top" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
 
         <p>{{gif.title}}</p>
       </div>
@@ -12,7 +12,5 @@
     </div>
   </div>
 
-
-  <button (click)="showGifs()">Pulasm</button>
 
 </div>
