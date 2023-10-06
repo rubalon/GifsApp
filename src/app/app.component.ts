@@ -14,7 +14,4 @@ export class AppComponent {
     return this.GifsService.tagHistory;
   }
 
-  get Gifs(): Gifs[] {
-    return this.GifsService.Gifs;
-  }
 }

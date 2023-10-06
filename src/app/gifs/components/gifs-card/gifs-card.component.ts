@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { Input } from '@angular/core';
+import { Gifs } from '../../interfaces/gifs.interfaces';
+
+@Component({
+  selector: 'app-gifs-card',
+  templateUrl: './gifs-card.component.html',
+  styleUrls: ['./gifs-card.component.css']
+})
+export class GifsCardComponent {
+
+  @Input()
+  public gif: Gifs | null = null;
+
+}
